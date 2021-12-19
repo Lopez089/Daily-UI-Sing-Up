@@ -7,7 +7,8 @@
 
   /*--------color-----------*/
   --first-color:linear-gradient(90deg, rgba(138,42,227,1) 50%, rgba(59,2,242,1) 100%);
-  --first-color-alt:rgba(59,2,242,1);
+  --secondary-color: rgba(59,2,242,1);
+  --first-color-alt:rgba(138,42,227, 10%);
   --title-color:#1F201D;
   --text-color:#9CA1B8;
   --text-color-highlighted:#8A2AE3;
@@ -261,10 +262,26 @@ a{
 
 /*======================= COMPONENT =================*/
 
-@media (max-width:768px){
+@media (max-width:426px){
   .card{
-    min-width:0 !important;
+    width: 100vw;
+    height: 100vh !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:0 !important ;
+    -webkit-border-radius:0 !important ;
+    -moz-border-radius:0 !important ;
+    -ms-border-radius:0 !important ;
+    -o-border-radius:0 !important ;
   }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password']{
+    border:1px solid var(--first-color-alt);
+  }
+
 }
 .card{
   background-color:#fff;
