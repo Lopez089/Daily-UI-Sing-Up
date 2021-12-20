@@ -215,9 +215,13 @@ input[type='password']{
   width: 100%;
 }
 
+input[type='checkbox']{
+  display:block;
+}
+
 input[type="checkbox"]:after{
   position: relative;
-  display: none;
+  display: block;
   width: 11px;
   height: 11px;
   border: 1px solid #808080;
