@@ -131,6 +131,10 @@ button{
   display: grid;
 }
 
+.flex{
+  display: flex;
+}
+
 .main{
   overflow: hidden;
 }
@@ -217,14 +221,21 @@ input[type='password']{
 
 input[type='checkbox']{
   display:block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--text-color);
+  border-radius: .1rem;
+  content: "";
+  background: white;
 }
 
 input[type="checkbox"]:after{
   position: relative;
   display: block;
-  width: 11px;
-  height: 11px;
-  border: 1px solid #808080;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--text-color);
   border-radius: .1rem;
   content: "";
   background: white;
@@ -233,8 +244,8 @@ input[type="checkbox"]:after{
 input[type="checkbox"]:checked:after{
   position: relative;
   display: block;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   border: 1px solid #ececec;
   border-radius: .1rem;
   content: "";
@@ -298,6 +309,7 @@ a{
 
 .card__conditions{
   font-size:var(--smaller-font-size) ;
+  margin-left: .5rem;
 }
 
 .card__sign-in{

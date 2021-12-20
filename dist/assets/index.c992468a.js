@@ -18,7 +18,7 @@ const c=function(){const i=document.createElement("link").relList;if(i&&i.suppor
           <i class='bx bx-hide card__show-password'></i>
         </div>
        
-        <div>
+        <div class='flex'>
           <input type='checkbox' />
           <label class='card__conditions'> I read and agree to 
             <a href='#'> 
