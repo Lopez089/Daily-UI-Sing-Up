@@ -20,7 +20,7 @@ document.querySelector('#app').innerHTML = `
           <i class='bx bx-hide card__show-password'></i>
         </div>
        
-        <div class='flex'>
+        <div class='center'>
           <input type='checkbox' />
           <label class='card__conditions'> I read and agree to 
             <a href='#'> 
